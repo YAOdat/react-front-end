@@ -47,9 +47,9 @@ export default function Person() {
 
             </form>
 
-            <div>
+            <div >
 
-                <h2> {name} </h2>
+                <h2 data-testid="renderedData"> {name} </h2>
                 <h2> {age} </h2>
                 <h2> {gender} </h2>
 
