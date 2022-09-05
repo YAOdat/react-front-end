@@ -24,8 +24,9 @@ export default function Person() {
         setGender(e.target.gender.value)
 
         // http://localhost:4000/person
+        // https://express-odat.herokuapp.com/
         
-        let response = await axios.post(`http://localhost:4000/person`, person)
+        let response = await axios.post(`https://express-odat.herokuapp.com/person`, person)
         setAge(response.data.age)
         console.log(response.data.age, 'response')
     }
@@ -49,7 +50,7 @@ export default function Person() {
 
             <div>
 
-                <h2> {name} </h2>
+                <h2 data-testid="renderedData">{name}</h2>
                 <h2> {age} </h2>
                 <h2> {gender} </h2>
 
